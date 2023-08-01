@@ -284,3 +284,22 @@ footer {
 .login-btn:hover {
   background-color: #be931d;
 }
+
+.contact {
+  display: flex;
+  margin: 1rem auto;
+  margin-bottom: 8rem;
+  width: 124rem;
+  background-color: #fcf1d4;
+  height: 500px;
+  border-radius: 9px;
+}
+
+.contact-heading {
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+.mg-btm {
+  margin-bottom: 0;
+}
