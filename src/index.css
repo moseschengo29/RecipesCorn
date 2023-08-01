@@ -216,3 +216,71 @@ footer {
   font-weight: 700;
   text-align: center;
 }
+
+.login-form {
+  max-width: 50rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 48rem;
+  margin: 5rem auto 1rem;
+  padding: 3rem 3rem;
+  border: 1px solid #d8d8d8;
+  font-size: 1.8rem;
+
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(163, 163, 163, 0.5);
+  transition: all 0.5s ease;
+}
+
+.login-form:hover {
+  box-shadow: none;
+}
+
+.form-title {
+  font-size: 2.8rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-inputs label {
+  font-weight: 700;
+}
+
+.form-inputs input {
+  padding: 1rem 1rem;
+  border: none;
+  background-color: #fafafa;
+  border-left: 3px solid green;
+  color: #777;
+  font-size: 1.6rem;
+}
+
+.form-inputs input:hover,
+.form-inputs input:focus {
+  outline: none;
+}
+.form-inputs input::placeholder {
+  font-size: 1.6rem;
+}
+
+.login-btn {
+  padding: 1rem 2rem;
+  background-color: #e2b537;
+  border: none;
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.login-btn:hover {
+  background-color: #be931d;
+}
