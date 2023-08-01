@@ -207,3 +207,12 @@ a {
 .gallery-item img:hover {
   transform: scale(1.1);
 }
+
+footer {
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: #fcf1d4;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
