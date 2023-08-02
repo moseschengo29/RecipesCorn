@@ -3,10 +3,10 @@ import { FaStar } from "react-icons/fa";
 import "../pages/RateUs";
 import Navbar from "./Navbar";
 
-function Rating() {
+function RatingForm() {
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
-  const [feedback, setFeedback] = useState(""); 
+  const [feedback, setFeedback] = useState("");
 
   const handleRatingChange = (currentRating) => {
     setRating(currentRating);
@@ -17,7 +17,6 @@ function Rating() {
   };
 
   const handleSubmit = () => {
-    
     console.log("Submitted Rating:", rating);
     console.log("Feedback:", feedback);
 
@@ -27,7 +26,6 @@ function Rating() {
 
   return (
     <>
-      <Navbar />
       <div className="Rating" style={styles.container}>
         <div className="rating-card">
           {[...Array(5)].map((star, index) => {
@@ -54,11 +52,13 @@ function Rating() {
         {rating && <p style={styles.ratingText}>Your Rating is {rating}</p>}
         <textarea
           placeholder="What's Your Feedback"
-          value={feedback} 
-          onChange={handleFeedbackChange} 
+          value={feedback}
+          onChange={handleFeedbackChange}
           style={styles.textarea}
         />
-        <button style={styles.button} onClick={handleSubmit}>Submit</button>
+        <button style={styles.button} onClick={handleSubmit}>
+          Submit
+        </button>
       </div>
     </>
   );
@@ -80,21 +80,21 @@ let styles = {
   },
   button: {
     border: "none",
-    backgroundColor: "#f4d06f", 
-    color: "#333", 
-    fontWeight: "bold", 
-    fontSize: "16px", 
-    padding: "15px 30px", 
-    borderRadius: "10px", 
-    cursor: "pointer", 
-    margin: "10px 0", 
+    backgroundColor: "#f4d06f",
+    color: "#333",
+    fontWeight: "bold",
+    fontSize: "16px",
+    padding: "15px 30px",
+    borderRadius: "10px",
+    cursor: "pointer",
+    margin: "10px 0",
   },
   ratingText: {
     fontSize: "20px",
     fontWeight: "bold",
-    font:"italic",
+    font: "italic",
     margin: "10px 0",
   },
 };
 
-export default Rating;
+export default RatingForm;
