@@ -11,7 +11,6 @@ function Map() {
         id="gmap_canvas"
         src="https://maps.google.com/maps?width=1100&amp;height=600&amp;hl=en&amp;q=Garden%20City%20Nairobi+(Nairobi)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
       ></iframe>
-      <a href="https://clouddevs.com/google-maps-generator/">Maps Generator</a>
     </div>
   );
 }

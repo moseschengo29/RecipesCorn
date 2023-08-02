@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 
 function Navbar() {
@@ -7,24 +7,13 @@ function Navbar() {
       <Logo />
       <ul className="nav-links">
         <li>
-          <NavLink to="/about" activeClassName="navlink">
-            About 
-          </NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <NavLink to="/contact" activeClassName="navlink">
-            Contact
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/rateUs" activeClassName="navlink">
-            Rate us
-          </NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li className="login">
-          <NavLink to="/login" activeClassName="navlink">
-            Login
-          </NavLink>
+          <NavLink to="/login">Login</NavLink>
         </li>
       </ul>
     </nav>
