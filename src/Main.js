@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import App from "./pages/App";
 import Login from "./pages/Login";
-import RatingForm from "./pages/RatingForm";
+import RatingForm from "./components/RatingForm";
 
 function Main() {
   return (

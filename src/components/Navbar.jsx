@@ -7,22 +7,22 @@ function Navbar() {
       <Logo />
       <ul className="nav-links">
         <li>
-          <NavLink to="/about" activeClassName="navlink">
+          <NavLink to="/about">
             About 
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" activeClassName="navlink">
+          <NavLink to="/contact">
             Contact
           </NavLink>
         </li>
         <li>
-          <NavLink to="/rateUs" activeClassName="navlink">
+          <NavLink to="/rateUs">
             Rate us
           </NavLink>
         </li>
         <li className="login">
-          <NavLink to="/login" activeClassName="navlink">
+          <NavLink to="/login">
             Login
           </NavLink>
         </li>
