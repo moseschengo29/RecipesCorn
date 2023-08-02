@@ -303,3 +303,25 @@ footer {
 .mg-btm {
   margin-bottom: 0;
 }
+
+.Rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.rating-card {
+  border: 1px solid #ccc;
+  border-radius: 58px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.star {
+  cursor: pointer;
+}
+

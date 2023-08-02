@@ -8,12 +8,17 @@ function Navbar() {
       <ul className="nav-links">
         <li>
           <NavLink to="/about" activeClassName="navlink">
-            About
+            About 
           </NavLink>
         </li>
         <li>
           <NavLink to="/contact" activeClassName="navlink">
             Contact
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/rateUs" activeClassName="navlink">
+            Rate us
           </NavLink>
         </li>
         <li className="login">

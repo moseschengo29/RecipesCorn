@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import App from "./pages/App";
 import Login from "./pages/Login";
+import RatingForm from "./pages/RatingForm";
 
 function Main() {
   return (
@@ -15,6 +16,7 @@ function Main() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/app" element={<App />} />
+          <Route path="/rateUs" element={<RatingForm />} />
         </Routes>
       </BrowserRouter>
     </>
