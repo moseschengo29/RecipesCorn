@@ -4,19 +4,25 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import App from "./pages/App";
 import Login from "./pages/Login";
+import { AuthProvider } from "./contexts/AuthContext";
+
+//https://forkify-api.herokuapp.com/api/search?q=pizza
+//https://forkify-api.herokuapp.com/api/get?rId=47746
 
 function Main() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/app" element={<App />} />
-        </Routes>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/app" element={<App />} />
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }
