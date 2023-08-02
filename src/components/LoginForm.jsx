@@ -1,12 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
   const [username, setUsername] = useState("John");
   const [email, setEmail] = useState("johndoe@gmail.com");
   const [password, setPassword] = useState("password");
 
+  const navigate = useNavigate();
+
+  const { login, isAuthenticated } = useAuth();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    // console.log("this");
+    if (username && email && password) {
+      login(username, email, password);
+      console.log("this");
+    }
+  }
+
+  useEffect(() => {
+    if (isAuthenticated) navigate("/app");
+  }, [isAuthenticated, navigate]);
+
   return (
-    <form className="login-form">
+    <form className="login-form" onSubmit={(e) => handleSubmit(e)}>
       <h1 className="form-title">
         Login to begin looking at all our recipes...
       </h1>
@@ -18,6 +37,7 @@ function LoginForm() {
           type="text"
           placeholder="Username"
           id="username"
+          required
         />
       </div>
 
@@ -29,6 +49,7 @@ function LoginForm() {
           type="email"
           placeholder="Enter your email"
           id="email"
+          required
         />
       </div>
 
@@ -40,14 +61,11 @@ function LoginForm() {
           type="password"
           placeholder="Enter your password"
           id="password"
+          required
         />
       </div>
 
-      <button
-        onClick={(e) => e.preventDefault()}
-        type="submit"
-        className="login-btn"
-      >
+      <button type="submit" className="login-btn">
         Login
       </button>
     </form>
