@@ -25,36 +25,12 @@ function Hero() {
           </Link>
           <div className="hero-customers">
             <div className="customers-imgs">
-              <img
-                src={customer1}
-                alt="Customer Image"
-                className="customer-img"
-              />
-              <img
-                src={customer2}
-                alt="Customer Image"
-                className="customer-img"
-              />
-              <img
-                src={customer3}
-                alt="Customer Image"
-                className="customer-img"
-              />
-              <img
-                src={customer4}
-                alt="Customer Image"
-                className="customer-img"
-              />
-              <img
-                src={customer5}
-                alt="Customer Image"
-                className="customer-img"
-              />
-              <img
-                src={customer6}
-                alt="Customer Image"
-                className="customer-img"
-              />
+              <img src={customer1} alt="Customer" className="customer-img" />
+              <img src={customer2} alt="Customer " className="customer-img" />
+              <img src={customer3} alt="Customer " className="customer-img" />
+              <img src={customer4} alt="Customer " className="customer-img" />
+              <img src={customer5} alt="Customer " className="customer-img" />
+              <img src={customer6} alt="Customer" className="customer-img" />
             </div>
             <p className="customers-text">
               <span className="customers-number">1000+</span> Happy Customers!
@@ -62,7 +38,7 @@ function Hero() {
           </div>
         </div>
         <div>
-          <img src={heroImage} alt="Hero image" className="hero-img" />
+          <img src={heroImage} alt="Hero" className="hero-img" />
         </div>
       </section>
     </div>
