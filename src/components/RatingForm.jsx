@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
-import "./RateUs";
-import Navbar from "../components/Navbar";
+import "../pages/RateUs";
+import Navbar from "./Navbar";
 
 function Rating() {
   const [rating, setRating] = useState(null);

@@ -7,6 +7,24 @@ function Navbar() {
       <Logo />
       <ul className="nav-links">
         <li>
+          <NavLink to="/about">
+            About 
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact">
+            Contact
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/rateUs">
+            Rate us
+          </NavLink>
+        </li>
+        <li className="login">
+          <NavLink to="/login">
+            Login
+          </NavLink>
           <NavLink to="/about">About</NavLink>
         </li>
         <li>
