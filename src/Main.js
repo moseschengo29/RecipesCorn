@@ -6,9 +6,6 @@ import App from "./pages/App";
 import Login from "./pages/Login";
 import { AuthProvider } from "./contexts/AuthContext";
 
-//https://forkify-api.herokuapp.com/api/search?q=pizza
-//https://forkify-api.herokuapp.com/api/get?rId=47746
-
 function Main() {
   return (
     <>
