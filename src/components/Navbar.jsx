@@ -10,6 +10,9 @@ function Navbar() {
           <NavLink to="/about">About</NavLink>
         </li>
         <li>
+          <NavLink to="/rate-us">Rate us</NavLink>
+        </li>
+        <li>
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <li className="login">
