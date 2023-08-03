@@ -350,7 +350,7 @@ footer {
 
 
 #imgchef1{
-  height:850px;
+  height:750px;
   content:"Chef Moringa";
   padding:40px;
   opacity: 0.8;
@@ -368,17 +368,19 @@ footer {
 }
 
 #chef1con{
-  font-size:large;
+  font-size:20px;
   margin-left:4%;
   margin-right:10%;
   margin-top:-150px;
   margin-bottom: 20%;
   cursor: pointer;
 
+
 }
-aside.hover{
-  color: blue;
-  font-size:50px;
+#chef1con:hover{
+  
+ font-size:25px;
+ filter:blur(0px)
 }
 #chef2con{
   font-size:20px;
@@ -400,6 +402,7 @@ aside.hover{
     display:flex;
     margin-top:10%;
     height: 70px;
+    /* filter:blur(1px); */
    
     
 }
