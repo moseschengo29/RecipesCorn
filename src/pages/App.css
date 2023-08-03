@@ -1,0 +1,126 @@
+
+header {
+  color: darkblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.recipe-item:hover {
+  background: rgba(232, 247, 252, 0.9);
+  transform: translateY(-5px);
+}
+
+.recipe-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+.recipe-item-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.recipe-item h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: darkblue;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-item p {
+  margin: 10px 0;
+  color: darkblue;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.recipe-item a {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.3));
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
+  min-width: 150px;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.recipe-item a:hover {
+  background: linear-gradient(to right, rgba(0, 128, 255, 0.6), rgba(0, 128, 255, 0.3));
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  
+  .recipe-item {
+    flex-direction: column;
+  }
+
+  .recipe-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .recipe-item-content {
+    text-align: center;
+  }
+
+  .recipe-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-item a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+}
+
