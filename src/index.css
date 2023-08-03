@@ -325,6 +325,113 @@ footer {
   cursor: pointer;
 }
 
+
 .contact-page{
   height: 100vh;
 }
+
+
+#boddy{
+  /*background-color:#d3b153;*/
+  background-image: url(https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1380&q=80);
+  background-size:cover;
+  color:#fcf1d4;
+}
+#chefM{
+    display:flex;
+  
+
+}
+
+#chefF{
+  display:flex;
+  background-color:"";
+}
+
+
+#imgchef1{
+  height:850px;
+  content:"Chef Moringa";
+  padding:40px;
+  opacity: 0.8;
+  border-radius: 25%;
+}
+
+#imgchef2{
+  /* height:750px; */
+  width:90%;
+  margin-left:10%;
+  padding: 40px; 
+  opacity: 0.9;
+  border-radius: 20%;
+  
+}
+
+#chef1con{
+  font-size:large;
+  margin-left:4%;
+  margin-right:10%;
+  margin-top:-150px;
+  margin-bottom: 20%;
+  cursor: pointer;
+
+}
+aside.hover{
+  color: blue;
+  font-size:50px;
+}
+#chef2con{
+  font-size:20px;
+  margin-left:2%;
+  margin-right:37%;
+  margin-top:-150px;
+  cursor:pointer;
+
+
+}
+
+
+
+#label{
+    color: grey;
+    opacity: 0.5 ;
+    font-size:70px;
+    justify-content: center;
+    display:flex;
+    margin-top:10%;
+    height: 70px;
+   
+    
+}
+
+
+#body{
+  background-image: url(https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1380&q=80);
+  background-size: cover;
+  
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+#body div{
+  color:white;
+  display:grid;
+  margin-top:10%;
+  width:100%;
+  background-color: none;
+}
+#content{
+  background-color:gold;
+}
+
+
+
+/* #secondmain{
+  grid-template-columns: 50% 50%;
+  width:100%;
+} */
+/* # div{
+  background-color: blue;
+  padding:30px;
+} */
+
