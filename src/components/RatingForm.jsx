@@ -3,7 +3,8 @@ import { FaStar } from "react-icons/fa";
 import "../pages/RateUs";
 import Navbar from "./Navbar";
 
-function RatingForm() {
+function RatingForm({ onAdd }) {
+  const [showForm, setShowForm] = useState(false);
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   const [feedback, setFeedback] = useState("");
@@ -16,51 +17,80 @@ function RatingForm() {
     setFeedback(event.target.value);
   };
 
-  const handleSubmit = () => {
-    console.log("Submitted Rating:", rating);
-    console.log("Feedback:", feedback);
+  function handleAddReview() {
+    setShowForm((form) => !form);
+  }
+
+  function addRating(data) {
+    fetch("http://localhost:3000/ratings", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then(data);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const userData = {
+      id: crypto.randomUUID(),
+      rating,
+      feedback,
+    };
+
+    addRating(userData);
+    onAdd(userData);
 
     setRating(null);
     setFeedback("");
   };
 
   return (
-    <>
-      <div className="Rating" style={styles.container}>
-        <div className="rating-card">
-          {[...Array(5)].map((star, index) => {
-            const currentRating = index + 1;
-            return (
-              <label key={currentRating}>
-                <input
-                  type="radio"
-                  name="rating"
-                  value={currentRating}
-                  onClick={() => handleRatingChange(currentRating)}
-                />
-                <FaStar
-                  className="star"
-                  size={50}
-                  color={currentRating <= (hover || rating) ? "gold" : "#ccc"}
-                  onMouseEnter={() => setHover(currentRating)}
-                  onMouseLeave={() => setHover(null)}
-                />
-              </label>
-            );
-          })}
+    <div style={styles.container}>
+      <button className="btn-addreview" onClick={handleAddReview}>
+        {showForm ? "Close Form" : "Add Review!"}
+      </button>
+      {showForm && (
+        <div className="Rating">
+          <div className="rating-card">
+            {[...Array(5)].map((star, index) => {
+              const currentRating = index + 1;
+              return (
+                <label key={currentRating}>
+                  <input
+                    type="radio"
+                    name="rating"
+                    value={currentRating}
+                    onClick={() => handleRatingChange(currentRating)}
+                  />
+                  <FaStar
+                    className="star"
+                    size={50}
+                    color={currentRating <= (hover || rating) ? "gold" : "#ccc"}
+                    onMouseEnter={() => setHover(currentRating)}
+                    onMouseLeave={() => setHover(null)}
+                  />
+                </label>
+              );
+            })}
+          </div>
+          {rating && <p style={styles.ratingText}>Your Rating is {rating}</p>}
+          <textarea
+            placeholder="What's Your Feedback"
+            value={feedback}
+            onChange={handleFeedbackChange}
+            style={styles.textarea}
+          />
+          <button style={styles.button} onClick={(e) => handleSubmit(e)}>
+            Submit
+          </button>
         </div>
-        {rating && <p style={styles.ratingText}>Your Rating is {rating}</p>}
-        <textarea
-          placeholder="What's Your Feedback"
-          value={feedback}
-          onChange={handleFeedbackChange}
-          style={styles.textarea}
-        />
-        <button style={styles.button} onClick={handleSubmit}>
-          Submit
-        </button>
-      </div>
-    </>
+      )}
+    </div>
   );
 }
 

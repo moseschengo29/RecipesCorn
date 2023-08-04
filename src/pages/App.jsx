@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const API_KEY = "e234220dbda64365b25b5fe09b8b83d3";
 
@@ -20,9 +20,8 @@ function App() {
 
   return (
     <div>
-      <header>
-        <Link to='/'><h1>RecipesCorn</h1></Link>
-      </header>
+      <Navbar />
+
       <div className="container">
         <ul className="recipe-list">
           {recipes.map((recipe) => (
@@ -31,9 +30,13 @@ function App() {
               <h2>{recipe.title}</h2>
               <p>
                 <strong>Ingredients:</strong>{" "}
-                {recipe.extendedIngredients.map((ingredient) => ingredient.original).join(", ")}
+                {recipe.extendedIngredients
+                  .map((ingredient) => ingredient.original)
+                  .join(", ")}
               </p>
-              <a target='_blank' href={recipe.sourceUrl}>View Recipe</a>
+              <a target="_blank" href={recipe.sourceUrl}>
+                View Recipe
+              </a>
             </li>
           ))}
         </ul>
@@ -43,9 +46,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-

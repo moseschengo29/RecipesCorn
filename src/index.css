@@ -325,116 +325,131 @@ footer {
   cursor: pointer;
 }
 
-
-.contact-page{
+.contact-page {
   height: 100vh;
 }
 
-
-#boddy{
+#boddy {
   /*background-color:#d3b153;*/
   background-image: url(https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1380&q=80);
-  background-size:cover;
-  color:#fcf1d4;
+  background-size: cover;
+  color: #fcf1d4;
 }
-#chefM{
-    display:flex;
-  
-
+#chefM {
+  display: flex;
 }
 
-#chefF{
-  display:flex;
-  background-color:"";
+#chefF {
+  display: flex;
+  background-color: "";
 }
 
-
-#imgchef1{
-  width:620px;
-  content:"Chef Moringa";
-  padding:40px;
+#imgchef1 {
+  width: 620px;
+  content: "Chef Moringa";
+  padding: 40px;
   opacity: 0.8;
   border-radius: 25%;
 }
 
-#imgchef2{
+#imgchef2 {
   /* height:750px; */
-  width:90%;
-  margin-left:10%;
-  padding: 40px; 
+  width: 90%;
+  margin-left: 10%;
+  padding: 40px;
   opacity: 0.9;
   border-radius: 20%;
-  
 }
 
-#chef1con{
-  font-size:20px;
-  margin-left:4%;
-  margin-right:10%;
-  margin-top:-150px;
+#chef1con {
+  font-size: 20px;
+  margin-left: 4%;
+  margin-right: 10%;
+  margin-top: -150px;
   margin-bottom: 20%;
   cursor: pointer;
-
-
 }
-#chef1con:hover{
-  
- font-size:25px;
- filter:blur(0px)
+#chef1con:hover {
+  font-size: 25px;
+  filter: blur(0px);
 }
-#chef2con{
-  font-size:20px;
-  margin-left:2%;
-  margin-right:37%;
-  margin-top:-150px;
-  cursor:pointer;
-
-
+#chef2con {
+  font-size: 20px;
+  margin-left: 2%;
+  margin-right: 37%;
+  margin-top: -150px;
+  cursor: pointer;
 }
 
-
-
-#label{
-    color: grey;
-    opacity: 0.5 ;
-    font-size:70px;
-    justify-content: center;
-    display:flex;
-    margin-top:10%;
-    height: 70px;
-    /* filter:blur(1px); */
-   
-    
+#label {
+  color: grey;
+  opacity: 0.5;
+  font-size: 70px;
+  justify-content: center;
+  display: flex;
+  margin-top: 10%;
+  height: 70px;
+  /* filter:blur(1px); */
 }
 
-
-#body{
+#body {
   background-image: url(https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1380&q=80);
   background-size: cover;
-  
-  display:grid;
+
+  display: grid;
   grid-template-columns: 50% 50%;
 }
 
-#body div{
-  color:white;
-  display:grid;
-  margin-top:10%;
-  width:100%;
+#body div {
+  color: white;
+  display: grid;
+  margin-top: 10%;
+  width: 100%;
   background-color: none;
 }
-#content{
-  background-color:gold;
+#content {
+  background-color: gold;
 }
 
+.review-list {
+  max-width: 800px;
+  margin: 3rem auto;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
+.mg-top {
+  margin-top: 30px;
+}
 
-/* #secondmain{
-  grid-template-columns: 50% 50%;
-  width:100%;
-} */
-/* # div{
-  background-color: blue;
-  padding:30px;
-} */
+.center {
+  text-align: center;
+}
 
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #333;
+  padding: 4rem;
+  line-height: 1.6;
+  background-color: #f3f3f3;
+}
+
+.review-title {
+  font-weight: 600;
+}
+
+.btn-addreview {
+  border: none;
+  background-color: #f4d06f;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px auto;
+}

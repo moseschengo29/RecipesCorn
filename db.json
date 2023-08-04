@@ -1,0 +1,33 @@
+{
+  "contact-info": [
+    {
+      "id": "f0a1d87a-b336-4d62-9471-35c2c6510ff1",
+      "fullName": "Moses Chengo",
+      "email": "mosesmwapahe2005@gmail.com",
+      "number": "+254 115 824 803",
+      "message": "I want a personal home made recipe from you guys!"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "995dd1de-3940-4e4c-a669-a3c3a973413b",
+      "rating": 5,
+      "feedback": "All the recipes are great, easy to understand, very descriptive and overall a 10/10 experience for me. I would totally recommend this!"
+    },
+    {
+      "id": "20b497f8-05b2-43f1-8a3a-1dc13cda4646",
+      "rating": 4,
+      "feedback": "Overall a decent service. I got the recipes i wanted"
+    },
+    {
+      "id": "fe0b72cd-395c-425e-ba09-3bb213d3ae85",
+      "rating": 4,
+      "feedback": "The recipes are on point, I love these guys!"
+    },
+    {
+      "id": "affaf5ea-1931-4fa6-a5a3-fcb5856c0f96",
+      "rating": null,
+      "feedback": ""
+    }
+  ]
+}

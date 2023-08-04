@@ -1,18 +1,6 @@
-
-header {
-  color: darkblue;
-  padding: 20px;
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
 .container {
-  margin: 20px auto;
-  max-width: 1200px;
+  margin: 80px auto;
+  max-width: 1400px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
@@ -29,6 +17,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -64,34 +53,43 @@ header {
 
 .recipe-item p {
   margin: 10px 0;
-  color: darkblue;
-  font-size: 16px;
+  color: #555;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 .recipe-item a {
-  background: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.3));
+  background: linear-gradient(
+    to right,
+    rgba(230, 136, 14, 0.788),
+    rgba(230, 159, 8, 0.781)
+  );
   color: white;
   border-radius: 25px;
   font-weight: 700;
   min-width: 150px;
-  padding: 12px 24px;
+  padding: 12px 18px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
+  transition: all 0.5s ease;
+  margin-right: 10px;
 }
 
 .recipe-item a:hover {
-  background: linear-gradient(to right, rgba(0, 128, 255, 0.6), rgba(0, 128, 255, 0.3));
+  background: linear-gradient(
+    to right,
+    rgba(255, 153, 0, 0.6),
+    rgba(255, 208, 0, 0.507)
+  );
 }
 
 @media screen and (max-width: 768px) {
   .container {
     max-width: 90%;
   }
-  
+
   .recipe-item {
     flex-direction: column;
   }
@@ -123,4 +121,3 @@ header {
     padding: 10px 20px;
   }
 }
-
